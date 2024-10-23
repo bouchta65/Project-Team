@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.mel-filtres-recherche{
+    
+    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.mel-offre-recherche-barr{
+
+    
+    height: 200px;
+    width: 100%;
+}
+
+.mel-offre-recherche h1 {
+    margin-left: 5%;
+    font-size: 15px;
+}
+
+.mel-filtres{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center ;
+    
+
+}
+
+
+.mel-filtres-select-ville{
+    width: 100%;
+    border-radius: 5px;
+    border-color: #4D869C;
+    height: 30px;
+    color: #4D869C;
+    font-size: 13px;
+}
+
+.mel-filtres-sec1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.mel-filtres-sec2{
+    width: 100%;
+}
+
+.mel-filtres-sec3{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mel-filtres-select-secteur {
+    width: 45%;
+    border-radius: 5px;
+    border-color: #4D869C;
+    height: 30px;
+    color: #4D869C;
+}
+
+.mel-recherche-filtre{
+    border-color: #4D869C;
+    color: #4D869C;
+    font-size: 13px;
+    height: 30px;
+}
+
+.mel-recherche-filtre{
+    width: 45%;
+    border-radius: 5px;
+    border: 1px solid #4D869C;
+    
+
+}
+.mel-recherche-filtre::placeholder{
+    color: #4D869C;
+}
+
+.mel-filtres-recherche #mel-input-filtres{
+    height: 30px;
+    right: 0;
+    background-color: #4338CA;
+    width: 20%;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width :426px ) {
+    
+.mel-filtres-recherche{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    
+    width: 100%;
+    gap: 20px;
+
+    
+}
+.mel-filtres-sec1{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.mel-filtres-sec3{
+    margin-right: 0;
+    justify-content: center;
+}
+
+.mel-filtres-select-secteur{
+    width: 80%;
+}
+
+.mel-filtres-select-ville{
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mel-offre-recherche-barr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    width: 18%;
+    gap: 10px;
+    border-radius: 5%;
+    background-color: #4338CA;
+    border: 1px solid ;
+
+
+}
+
+.mel-filtres-recherche #mel-input-filtres{
+    background-color: #B7CED5;
+    color: hwb(0 0% 100%);   
+    border: none;
+}
+
+.mel-recherche-filtre{
+    width:80%;
+    
+
+}
+
+.mel-offre-recherche h1 {
+    font-size: 15px;
+    color: white;
+}
+#mel-offre-recherche-title{
+    display: flex;
+    
+     justify-content: center;
+}
+
+
+
+}
