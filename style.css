@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    background-color: #181C22;
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 686px;
+    width: 100%;
+    padding: 2em;
+    overflow: hidden;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.2em;
+}
+
+.about-us{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.newsletter{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4.1fr);
+    gap: 0.2em;
+    justify-content: center;
+}
+.popular-links{
+    width: 10em;
+}
+.popular-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6em;
+}
+.job-offers{
+    width: 15em;
+}
+.job-offers ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+footer h3{
+    padding: 0.5em;
+    padding-left: 0em;
+    color: white;
+    font-weight: bold;
+}
+footer a{
+    text-decoration: none;
+    color: #727272;
+}
+footer li{
+    list-style-type: none;
+    color: #727272;
+}
+.about-us p{
+    color: #727272;
+}
+.newsletter p{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: #727272;
+}
+footer form button,input{
+    border: none;
+}
+footer button{
+    height: 2em;
+    background-color: #4D869C;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+
+}
+footer button a{
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    color: aliceblue;
+}
+footer form input{
+    height: 2em;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+footer form{
+    display: flex;
+}
+input::placeholder {
+    font-size: 10px;
+    padding: 11px;
+  }
+    
