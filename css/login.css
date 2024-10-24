@@ -1,0 +1,149 @@
+.sh-login-section {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+.sh-login-container {
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sh-login-already-registered {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sh-login-aulready-registered a {
+    color: #3d56f0;
+    text-decoration: none;
+}
+
+.sh-login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sh-login-form input[type="email"], .sh-login-form input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sh-login-remember-me {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.sh-login-remember-me input[type="checkbox"] {
+  
+    margin-left: 50px;
+}
+
+.sh-login-button {
+    width: 85%;
+    padding: 15px;
+    background: #3d56f0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 30px;
+    font-family: 'Alata', sans-serif;
+}
+
+.sh-login-button:hover {
+    background: #2a3ec6;
+}
+
+.sh-login-forgot-password {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Alata', sans-serif;
+}
+
+.sh-login-forgot-password a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.sh-login-divider {
+    border-top: 1px solid black;
+    margin-top: 30px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.sh-login-google-button {
+    width: 85%;
+    border: 2px solid #70168b;
+    border-radius: 8px;
+    display: flex;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 30px;
+    background-color: white;
+}
+
+.sh-login-google-button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.sh-login-not-registered {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sh-login-not-registered a {
+    color: #0F3DDE;
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+
+    .sh-login-divider { 
+        width: 67%;
+
+    }
+    .sh-login-section {
+        display: flex;
+        width: 100%;
+    }
+
+    .sh-login-container {
+        width: 50%; 
+        border-radius: 0; 
+        box-shadow: none; 
+    }
+    .sh-login-image {
+        width: 50%;
+        background-image: url('../images/login-img.png');
+        background-size: cover; 
+    }
+    
+}
