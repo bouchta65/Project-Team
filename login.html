@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sh-login-section">
+        <div class="sh-login-container">
+            <p class="sh-login-already-registered">Déjà inscrit ? <a href="#">Connectez-vous ?</a></p>
+
+            <form class="sh-login-form">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" placeholder="Enter votre mot de passe">
+
+                <div class="sh-login-remember-me">
+           
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Se souvenir de moi</label>
+                </div>
+
+                <button type="submit" class="sh-login-button">SE CONNECTER</button>
+
+                <div class="sh-login-divider"></div>
+
+                <p class="sh-login-forgot-password"><a href="#">Mot de passe oublié ?</a></p>
+
+                <button type="button" class="sh-login-google-button">
+                    <img src="images/icon-google.png" alt="Google Logo">
+                    Continuer Avec Google
+                </button>
+
+                <p class="sh-login-not-registered">Pas de compte? <a href="#">S’inscrire !</a></p>
+            </form>
+        </div>
+        <div class="sh-login-image"></div> 
+    </section>
+</body>
+
+</html>
