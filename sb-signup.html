@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Form</title>
+    <link rel="stylesheet" href="css/sb-signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="SuP">
+        <div class="SignUp-container">
+            <h2>Et si vous tentiez une carrière à votre dimension ?</h2>
+            <p>
+                Rejoignez notre communauté et accédez à tous les outils qui vous permettront
+                de présenter au marché la meilleure version de vous-même, et de mettre ainsi
+                toutes les chances de votre côté. Si vous êtes déjà inscrit sur ReKrute,
+                <a href="#">veuillez vous identifier</a>, ou créez un compte en vous inscrivant ci-dessous.
+            </p>
+            <form action="#" method="POST">
+                <div class="sb-container">
+                <div class="form-group0">
+                    <label for="civilite">Civilité *</label>
+                    <select id="civilite" name="civilite" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="Monsieur">Monsieur</option>
+                        <option value="Madame">Madame</option>
+                    </select>
+                </div>
+
+                <div class="form-group-1">
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                </div>
+
+                <div class="form-group-2">
+                    <label for="prenom">Prenom *</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                </div>
+           
+            </div>
+            
+            <div class="sb-container2">
+                <div class="form-group-3">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                </div>
+
+                <div class="form-group-4">
+                    <label for="password">Mot de passe *</label>
+                    <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+                </div>
+
+                <div class="form-group-5">
+                    <label for="poste">Titre du poste actuel *</label>
+                    <input type="text" id="poste" name="poste" placeholder="Entrez votre titre" required>
+                </div>
+
+                <div class="form-group-6">
+                    <label for="fonction">Fonction actuelle *</label>
+                    <select id="fonction" name="fonction" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="Fonction 1">Fonction 1</option>
+                        <option value="Fonction 2">Fonction 2</option>
+                    </select>
+                </div>
+
+                <div class="form-group-7">
+                    <label for="secteur">Secteur actuel *</label>
+                    <select id="secteur" name="secteur" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="Secteur 1">Secteur 1</option>
+                        <option value="Secteur 2">Secteur 2</option>
+                    </select>
+                </div>
+
+                <div class="form-group-8">
+                    <label for="niveau_etudes">Niveau d'études *</label>
+                    <select id="niveau_etudes" name="niveau_etudes" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="Licence">Licence</option>
+                        <option value="Master">Master</option>
+                    </select>
+                </div>
+
+                <div class="form-group-9">
+                    <label for="formation">Type de formation *</label>
+                    <select id="formation" name="formation" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="Formation 1">Formation 1</option>
+                        <option value="Formation 2">Formation 2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sb-container3">
+                <div class="form-group">
+                    <label for="ville">Ville de résidence *</label>
+                    <input type="text" id="ville" name="ville" placeholder="Entrez votre ville" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pays">Pays de résidence *</label>
+                    <select id="pays" name="pays" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="France">France</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="region">Région *</label>
+                    <select id="region" name="region" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="Région 1">Région 1</option>
+                        <option value="Région 2">Région 2</option>
+                    </select>
+                </div>
+            </div>
+                <div class="form-group gender">
+                    
+                    <div class="gender-options">
+                        <input type="radio" id="homme" name="genre" value="Homme" required>
+                        <label for="homme">Homme</label>
+                        <input type="radio" id="femme" name="genre" value="Femme" required>
+                        <label for="femme">Femme</label>
+                    </div>
+                </div>
+
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        J'accepte les <a href="#">Conditions d'utilisation</a>, la <a href="#">Politique de confidentialité</a>, et la <a href="#">Politique relative aux cookies.</a>
+                    </label>
+                </div>
+
+                <button type="submit">Valider mon inscription</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
