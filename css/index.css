@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.mb-index-hero-section-img {
+    background-image: url('../images/index/backround-img3.png');
+    width: 100%;
+    min-height: 25vh; 
+    background-size:contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+@media (min-width: 374px) {
+    .mb-index-hero-section-img {
+        min-height: 100vh;
+    }
+}
+
+ .mb-text{
+    display: flex;
+    justify-content:center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-content: center;    
+}
+
+.mb-text h1{
+    margin-top: 25px;
+    color: white;
+    font-size: 1.3em; 
+    font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.4); 
+}
+
+.mb-button-hero{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    font-family: 'Karla';
+}
+.mb-button-hero{
+    
+}
+
+
+
