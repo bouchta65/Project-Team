@@ -86,3 +86,22 @@
     width: 30px;
     margin: 0 10px;
 } 
+@media (min-width:1024px){
+    .sh-contact-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .sh-contact-info {
+        border-radius:0;
+        width: 50%;
+    }
+    .sh-contact-form{
+        width: 50%;
+        margin-left: 20px;
+    }
+    .sh-contact-socials {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 26px;
+    }
+}
