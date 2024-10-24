@@ -20,9 +20,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
 }
-
 h2 {
     font-size: 1.5em;
     text-align: center;
@@ -46,10 +44,7 @@ p a:hover {
     text-decoration: underline;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .form-group {
     margin-bottom: 15px;
@@ -67,6 +62,7 @@ input, select {
     border-radius: 5px;
     font-size: 0.9em;
     width: 100%;
+    color: #797979;
 }
 
 .gender-options {
@@ -96,6 +92,15 @@ input, select {
 .terms a {
     color: black;
 }
+.form-group.terms{
+    display: flex;
+    justify-content: start;
+}
+
+.form-group.terms input{
+    width: 1.7em;
+    margin-bottom: 6px;
+}
 button {
     margin-top: 20px;
     padding: 10px;
@@ -105,100 +110,59 @@ button {
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    width: 100%;
+    
 }
 
 button:hover {
     background-color: #357ABD;
 }
 
-@media screen and (min-width: 768px) {
-    .SignUp-container {
-        max-width: none;
-    }
-
-    form {
+@media screen and (min-width:900px){
+    .sb-container{
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* Quatre colonnes égales */
-        grid-gap: 20px; /* Espacement entre les éléments */
+        grid-template-columns: repeat(3,24.4%);
+        grid-gap: 5em;
+        justify-content: center;    
     }
-
-    .form-group {
-        margin-bottom: 0;
-        padding: 0; /* Enlever tout padding par défaut */
-    }
-    .form-group .terms{
-
-    }
-    /* Appliquer une largeur fixe aux champs spécifiés (Civilité, Nom, Prénom, Ville, Pays, Région) */
-    .form-group:nth-child(1),  /* Civilité */
-    .form-group:nth-child(2),  /* Nom */
-    .form-group:nth-child(3),  /* Prénom */
-    .form-group:nth-child(11), /* Ville de résidence */
-    .form-group:nth-child(12), /* Pays de résidence */
-    .form-group:nth-child(13)  /* Région */
-    {
-        width: 375px; /* Largeur fixe */
-        grid-column: span 1; /* Occuper une colonne */
-    }
-
-    /* Champs Email et Mot de passe : même largeur, 2 colonnes chacun */
-    .form-group:nth-child(4), /* Email */
-    .form-group:nth-child(5)  /* Mot de passe */
-    {
-        grid-column: span 2; /* Chacun prend 2 colonnes */
-        width: 100%; /* Occupe toute la largeur disponible dans ces colonnes */
-    }
-
-    /* Troisième ligne : poste prend toute la ligne */
-    .form-group:nth-child(6) {
-        grid-column: span 4; /* Occupe les 4 colonnes */
-    }
-
-    /* Quatrième ligne : fonction et secteur */
-    .form-group:nth-child(7),
-    .form-group:nth-child(8) {
-        grid-column: span 2;
-    }
-
-    /* Cinquième ligne : niveau d'études et type de formation */
-    .form-group:nth-child(9),
-    .form-group:nth-child(10) {
-        grid-column: span 2;
-    }
-
-    /* Septième ligne : genre */
-    .form-group.gender {
-        grid-column: span 4;
-      
-        
-    }
-
-    /* Huitième ligne : terms */
-    .gender-options {
-        display: flex;
-        align-items: center;
-        width: 20px;
-    }
-    button {
-        grid-column: span 4;
-    }
-
-    .terms{
-        display: flex;
-        width: 100%;
-    }
-    .form-group.terms{
+    .sb-container3{
         display: grid;
-        grid-column-start: 1;
-        grid-column-end: 3;
+        grid-template-columns: repeat(3,24.4%);
+        grid-gap: 5em;
+        justify-content: center;
     }
-    .form-group.terms{
-        display: flex;
-        justify-content: start;
+    .sb-container2{
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        column-gap: 5em;
+        justify-content: center;
     }
+  .SignUp-container{
+    width: 100%;
+  }
 
-    .form-group.terms input{
-        width: 1.7em;
-        margin-bottom: 6px;
-    }
+button{
+    margin-left: 28%;
+    width: 400px;
+}
+
+.form-group-3{
+    grid-column: 1/2;                     
+}
+.form-group-4{
+    grid-column: 2/2;
+}
+
+.form-group-5{
+    grid-column: 1/3;   
+}
+.form-group.terms{
+    margin-left: 40px;
+}
+.gender-options input{
+    width: 20px;
+}
+.gender-options{
+    margin-left: 10px;
+}
 }
