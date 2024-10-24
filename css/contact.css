@@ -1,0 +1,88 @@
+.sh-contact-section {
+    display: flex;
+    width: 100%;
+    background-color: #f0f0f0; 
+}
+.sh-contact-container {
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sh-contact-header {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.sh-contact-header a {
+    color: #3d56f0;
+    text-decoration: none;
+}
+
+.sh-contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sh-contact-form input[type="text"], .sh-contact-form input[type="email"], .sh-contact-form textarea {
+    width: 90%;
+    padding: 9px;
+    margin-bottom: 3px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sh-contact-form textarea {
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.sh-contact-info {
+    font-family: 'Poppins', sans-serif;
+    background-color: #5F7ADF;
+    color: white;
+    text-align:left;
+    font-size:20px;
+    border-radius: 15px 15px 0 0 ;
+    padding-top: 2px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+}
+
+.sh-contact-info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sh-contact-info p {
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+    margin: 18.5px 2px;
+    display: flex;
+    gap: 15px;
+}
+
+.sh-contact-info img {
+    width: 24px;
+}
+
+.sh-contact-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+.sh-contact-socials img {
+    width: 30px;
+    margin: 0 10px;
+} 
