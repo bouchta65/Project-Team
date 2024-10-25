@@ -29,6 +29,7 @@ footer{
     gap: 1.2em;
     justify-content: center;
     margin-left: 5em;
+    flex-grow: 1;
 }
 
 .about-us{
