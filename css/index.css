@@ -194,6 +194,122 @@
       height: 3em;
       border-radius: 0 0  1.5em 1.5em   ;
 }
+
+.mb-temoignages{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mb-tem-backround{
+     background-color: #3D518C;
+     min-width: 27em;
+     height: 23em;
+     border-radius:0.4em;
+
+}
+.mb-icon-position {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    overflow: hidden; 
+}
+#scrollLeft, #scrollRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 2em; 
+    z-index: 10;
+}
+
+#scrollLeft {
+    left: 0;
+}
+
+#scrollRight {
+    right: 0;
+}
+
+.mb-contenu-top{
+    display: flex;
+    justify-content:flex-start;
+    column-gap: 1.5em;
+    padding: 2em;
+    
+}
+.mb-tem-img img{
+    width: 4.3em;
+    height: 4em;
+    border-radius: 50%;
+}
+.mb-contenu-top h1{
+    color: white;
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+.mb-contenu-top h2{
+    color: #cbc8c8;
+    font-size: 1.3em;
+    margin-top: -0.5em;
+}
+
+.mb-tem-backround p{
+    color: white;
+    padding: 1.8em;
+    margin-top: -3.8em;
+    line-height: 1.5;
+}
+.mb-tem-grid {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    column-gap: 5em;
+
+}
+.mb-tem-grid::-webkit-scrollbar {
+    display: none;
+}
+.mb-tem-titre{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.8em;
+    margin: 0.5em;
+    text-align: center;
+}
+ 
+
+.mb-chiffre-div h1{
+    border: 0.1em solid black;
+    padding: 0 1em;
+    font-size: 3em;
+    color: #4338CA;
+    font-weight:900;
+    text-align: center;
+    width: 6em;
+}
+.mb-chiffre-div h2{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+.mb-chiffre-nbr{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+}
+.mb-chiffre-div{
+    display: flex;
+    justify-content: center;
+}
+
 @media (min-width: 900px) {
     
     .mb-text h1{
@@ -309,13 +425,86 @@
     border-radius: 2em;
     border: 1px solid #797979;
 }
+.mb-tem-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3em;
+    width: 100%;
+}
+#scrollRight{
+    display: none;
+}
+#scrollLeft{
+    display: none;
+}
+
+
+.mb-chiffre-div h1{
+    border: 0.1em solid black;
+    padding: 0 1em;
+    font-size: 3em;
+    color: #4338CA;
+    font-weight:900;
+    text-align: center;
+    width: 5em;
+}
+.mb-chiffre-div h2{
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+.mb-chiffre-nbr{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+}
+.mb-chiffre-div{
+    display: flex;
+    justify-content: center;
+}
+.mb-entr-content{
+    background-color: white;
+    width:  45em;
+    border-radius: 1.5em;
+    box-shadow: 1px 3px 10px 1px #797979;
+    font-size: 1em;
+    text-align: center;
+    height: 10em;
+}
+
+.mb-entr-container{
+    background-color: #2f2a70;
+    height: 28em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
  
-@media (min-width: 900px) and (max-width:1333px){
+@media (min-width: 900px) and (max-width:1360px){
     .mb-offr-grid{
         grid-template-columns: repeat(3,1fr);
         column-gap: 3em;
     }
+    .mb-chiffre-nbr{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: row(2,1fr);
+        justify-content: center;
+        justify-items: center;
+        width: 80%;
+    }
+            
+.mb-index-offr-tittre-button{
+    margin-top: 10em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 18em;
+}
+
 }
 @media (min-width: 600px) and (max-width:900px){
     
@@ -346,6 +535,31 @@
         width: 8em;
         height: 2.5em;
     }
+    .mb-tem-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 3em;
+        width: 90%;
+    }
+    .mb-chiffre-nbr{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: row(2,1fr);
+        justify-content: center;
+        justify-items: center;
+        width: 80%;
+    }
+        
+.mb-index-offr-tittre-button{
+    margin-top: 14em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 0em;
+}
+
+
+
  
 }
 
