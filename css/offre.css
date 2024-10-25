@@ -14,7 +14,7 @@
     gap: 10px;
 }
 .mel-offre-recherche{
-    height: 150vh;
+    
 }
 .mel-offre-recherche-barr{
 
@@ -23,9 +23,12 @@
     width: 100%;
 }
 
+
 .mel-offre-recherche-title h1 {
     margin-left: 5%;
     font-size: 15px;
+    font-family: Arial, sans-serif;
+    margin-left: 10%;
 }
 
 .mel-filtres{
@@ -101,6 +104,85 @@
 
 #mel-filtres-result{
     display: none;
+    font-family: Arial, sans-serif;
+
+}
+
+.mel-offre-recherche-result{
+    height:300vh;
+}
+
+.mel-offre-recherche-result-affiche{
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5%;
+    justify-items: center;
+}
+
+.mel-offre-result-affiche {
+    padding: 3%;
+    background-color: white;
+    box-shadow:  5px 5px 5px 5px #abd2fabc,
+     inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0);
+    width: 86%;
+    height: 100%;
+    
+}
+
+.mel-offre-result-line{
+    justify-content: center;
+    height: 3px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: gray;
+    margin-top:  4px;
+    margin-bottom:  4px;
+}
+
+
+.mel-offre-result-affiche img{
+    width:  20%;
+    height: 20%;
+}
+
+.mel-offre-recherche-result h1{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+.mel-offre-recherche-result-affiche p{
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    
+}
+
+.mel-input-filtres-cont #mel-input-filtres{
+    height: 30px;
+    right: 0;
+    background-color: #4338CA;
+    width: 20%;
+    color: white;
+    border-radius: 5px;
+    
+}
+.mel-input-filtres-cont{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mel-offre-result{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
 }
 
 
@@ -117,7 +199,27 @@
 
 
 
-@media (min-width :426px ) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width :431px ) {
     
 .mel-filtres-recherche{
     
@@ -159,7 +261,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 40vh;
+    height: 50vh;
     width: 18%;
     gap: 10px;
     border-radius: 5%;
@@ -181,6 +283,12 @@
 
 .mel-offre-recherche{
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    height: fit-content;
+
+
 }
 
 .mel-recherche-filtre{
@@ -205,6 +313,28 @@
     display: inline;
     height: 100px;
     
+}
+.mel-offre-recherche-result{
+    width: 80% ;
+    background-color: #abd2fab3;
+    
+
+}
+
+#mel-filtres-result h1{
+    
+    font-size: 18px;
+    padding: 2%;
+    width: auto;
+}
+
+.mel-offre-recherche-result-affiche{
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 10% ;
+
 }
 
 
