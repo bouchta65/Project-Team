@@ -6,11 +6,13 @@
 .sh-contact-container {
     background: #fff;
     width: 100%;
-    padding: 0;
+    
     display: flex;
     flex-direction: column;
 }
-
+.sh-contact-form{
+    padding: 20px;
+}
 .sh-contact-header {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -18,7 +20,9 @@
     margin-bottom: 20px;
     
 }
-
+.sh-contact-info h2{
+    margin-top: 30px;
+}
 .sh-contact-header a {
     color: #3d56f0;
     text-decoration: none;
