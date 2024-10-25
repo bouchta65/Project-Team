@@ -8,185 +8,191 @@
 </head>
 <body>
 
-    <nav>
-        <a class="logo-mobile" href="index.html">
-            <img src="./images/navImages/Black and Grey Simple Minimalist Aesthetic Studio Font Logo 2.svg" alt="">
-          </a>
-        <input type="checkbox" id="sidebar-active">
-        <label for="sidebar-active" class="open-sidebar-button">
-          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    <nav class="mz-navbar-container">
+        <a class="mz-navbar-logo-mobile" href="index.html">
+          <img src="./images/navImages/Black and Grey Simple Minimalist Aesthetic Studio Font Logo 2.svg" alt="Logo">
+        </a>
+        
+        <input type="checkbox" id="mz-navbar-sidebar-active">
+        <label for="mz-navbar-sidebar-active" class="mz-navbar-open-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+          </svg>
         </label>
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="links-container">
-          
-    
-          <label for="sidebar-active" class="close-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        <label id="mz-navbar-overlay" for="mz-navbar-sidebar-active"></label>
+        
+        <div class="mz-navbar-links-container">
+          <label for="mz-navbar-sidebar-active" class="mz-navbar-close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
           </label>
-    
-          <a class="home-link" href="index.html">
-            <img src="./images/navImages/Black and Grey Simple Minimalist Aesthetic Studio Font Logo 2.svg" alt="">
+      
+          <a class="mz-navbar-home-link" href="index.html">
+            <img src="./images/navImages/Black and Grey Simple Minimalist Aesthetic Studio Font Logo 2.svg" alt="Home Logo">
           </a>
-          <a class="icons-menu" href="Accueil.html"> <img src="./images/navImages/Home.svg" alt=""> <span>Accueil</span></a class="icons-menu"> 
-            <a class="icons-menu" href="inscrire.html"><img src="./images/navImages/User.svg" alt=""> S’inscrire</a class="icons-menu">
-            <a class="icons-menu" href="emplois.html"> <img src="./images/navImages/Image.svg" alt=""> Offre d’emplois</a class="icons-menu">
-            <a class="icons-menu" href="entreprises.html"> <img src="./images/navImages/Document.svg" alt=""> Entreprises</a>
-          <button>se connecter</button>
-          
+          <a class="mz-navbar-link mz-navbar-icons-menu" href="index.html"> <span>Accueil</span></a> 
+          <a id="mz-navbar-activemenu" class="mz-navbar-link mz-navbar-icons-menu" href="offre.html">Offre d’emplois</a>
+          <a  class="mz-navbar-link mz-navbar-icons-menu" href="entreprise.html">Entreprises</a>
+          <a class="mz-navbar-link mz-navbar-icons-menu" href="contact.html">Contactez-nous</a>
+          <button class="mz-navbar-button">
+            <a class="mz-navbar-button-link" href="login.html">Se connecter</a>
+          </button>
         </div>
       </nav>
     
+      <section class="sh-background">
+        <h1>Offre d’emplois </h1>
+      </section>
 
 
 
-<div class="mel-offre-recherche">
-   <div class="mel-offre-recherche-barr"> 
-    <div id="mel-offre-recherche-title"><h1>Affiner les résultats</h1></div>
-    <div class="mel-filtres">
-        <div class="mel-filtres-recherche">
-            <div class="mel-filtres-sec1">
-                <select name="cars" class="mel-filtres-select-secteur" >
-                <option value="">Tous les secteure</option>
-                <option value="">Secteure2</option>
-                <option value="">Secteure3</option>
-                <option value="">Secteure4</option>
-                <option value="">Secteure5</option>
-                <option value="">Secteure6</option>
-                </select>
-                <input class="mel-recherche-filtre" type="search" placeholder="Recherche une entreprise...">
-            </div>
-            <div class="mel-filtres-sec2">
-                <select name="cars" class="mel-filtres-select-ville" >
-                <option value="">Tous les ville</option>
-                <option value="">ville2</option>
-                <option value="">ville3</option>
-                <option value="">ville4</option>
-                <option value="">ville5</option>
-                <option value="">ville6</option>
-                </select>
-            </div>
-            <div class="mel-filtres-sec3">
-            <input id= "mel-input-filtres" type="submit" value="Filtrer">
-            </div>
-        </div>
-    </div>
-    <div>
-    </div>
-    </div>
-    <div class="mel-offre-recherche-result"> 
-        <div id="mel-filtres-result"><h1>Emploi - Maroc</h1></div>
-        <div class="mel-offre-recherche-result-affiche">
-            <div class="mel-offre-result-affiche">
-                <div class="mel-offre-result">
-                    <img src="images/img-offre/logo.jpg" alt="">
-                    <div>
-                    <H1>Conseillers clients ( Immobilier ) H/F | Rabat (Maroc)</H1>
-                    <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
-                    </div>
-                </div>
-                <div class="mel-offre-result-line"></div>
-                <div>
-                    <p>Publication : du 22/10/2024 au 16/12/2024 | Postes proposés: 3<br>
-                        Secteur d'activité : Centre d'appel - Immobilier / Promoteur / Agence<br>
-                        Fonction : Call Centers (métiers de) , Immobilier / Promotion (métiers de)<br>
-                        Expérience requise : De 1 à 3 ans<br>
-                        Niveau d'étude demandé : Bac +3<br>
-                        Type de contrat proposé : CDI - Télétravail : Non</p>
-                </div>
-                <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
-            </div>
-            <div class="mel-offre-result-affiche">
-                <div class="mel-offre-result">
-                    <img src="images/img-offre/logo (2).jpg" alt="">
-                    <div>
-                        <H1>Conseillers clients ( Immobilier ) H/F | Rabat (Maroc)</H1>
-                    <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
-                    </div>
-                </div>
-                <div class="mel-offre-result-line"></div>
-                <div>
-                    <p> Publication : du 22/10/2024 au 22/12/2024 | Postes proposés: 1 <br>
-                        Secteur d'activité : Aéronautique / SpatialFonction : Logistique / Transport (métiers de) <br>
-                        Expérience requise : De 3 à 5 ans <br>
-                        Niveau d'étude demandé : Bac +3 <br>
-                        Type de contrat proposé : CDI - Télétravail : Non</p>
-                </div>
-                <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
-            </div>
-            <div class="mel-offre-result-affiche">
-                <div class="mel-offre-result">
-                    <img src="images/img-offre/logo (3).jpg" alt="">
-                    <div>
-                    <H1>Conseillers clients ( Immobilier ) H/F | Rabat (Maroc)</H1>
-                    <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
-                    </div>
-            </div> 
-            <div class="mel-offre-result-line"></div>
-                <div><p> Publication : du 22/10/2024 au 22/12/2024 | Postes proposés: 1 <br> 
-                    Secteur d'activité : Agriculture / Environnement <br>
-                    Fonction : Agriculture (métiers de l') <br>
-                    Expérience requise : De 3 à 5 ans <br>
-                    Niveau d'étude demandé : Bac +5 et plus <br>
-                    Type de contrat proposé : CDI - Télétravail : Non</p></div>
-                    <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
-            </div>
-            <div class="mel-offre-result-affiche">
-                <div class="mel-offre-result">
-                    <img src="images/img-offre/logo (4).jpg" alt="">
-                    <div>
-                        <H1>Aide Comptable Fournisseurs | Casablanca (Maroc)</H1>
-                        <P>&nbsp;Y Stratégie est un cabinet de consulting né d’une passion pour l’élaboration et la coordination de plans d’action, les ressources humaines et le business development, est une structure dirigée conseils et...</P>
-                        </div>
-                </div>
-                <div class="mel-offre-result-line"></div>
-                <div><p>Publication : du 22/10/2024 au 22/12/2024 <br> 
-                    Secteur d'activité : Transport / Messagerie / Logistique <br>
-                    Fonction : Gestion / Comptabilité / Finance <br>
-                    Expérience requise : De 1 à 3 ans Niveau d'étude demandé : Bac +2 <br>
-                    Type de contrat proposé : CDI - Télétravail : Non</p>
-                </div>
-                <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
-            </div>
-            <div class="mel-offre-result-affiche">
-                <div class="mel-offre-result">
-                    <img src="images/img-offre/logo (5).jpg" alt="">
-                    <div>
-                        <H1>Accounting Internship | Rabat (Maroc)</H1>
-                        <P>&nbsp;AXA Group Operations – Centre opérationnel d’excellence du Groupe AXA. Chez AXA, notre mission est de donner aux gens les moyens de vivre une vie meilleure. Grâce à l'innovation et à l'exécution, nous...</P>
-                        </div>
-                </div>
-                <div class="mel-offre-result-line"></div>
-                <div><p>Publication : du 22/10/2024 au 23/11/2024 | Postes proposés: 1 <br>
-                    Secteur d'activité : Informatique - Offshoring / Nearshoring <br>
-                    Fonction : Gestion / Comptabilité / Finance <br>
-                    Expérience requise : De 1 à 3 ans <br>
-                    Niveau d'étude demandé : Bac +5 et plus <br>
-                    Type de contrat proposé : Stage - Télétravail : Hybride</p></div>
-                    <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
-            </div>
-            <div class="mel-offre-result-affiche">
-                <div class="mel-offre-result">
-                    <img src="images/img-offre/logo (2).jpg" alt="">
-                    <div>
-                        <H1>Conseillers clients ( Immobilier ) H/F | Rabat (Maroc)</H1>
-                        <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
-                        </div>
-                </div>
-                <div class="mel-offre-result-line"></div>
-                <div><p>Publication : du 22/10/2024 au 16/12/2024 | Postes proposés: 3<br>
-                    Secteur d'activité : Centre d'appel - Immobilier / Promoteur / Agence<br>
-                    Fonction : Call Centers (métiers de) , Immobilier / Promotion (métiers de)<br>
-                    Expérience requise : De 1 à 3 ans<br>
-                    Niveau d'étude demandé : Bac +3<br>
-                    Type de contrat proposé : CDI - Télétravail : Non</p></div>
-                    <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
+      <div class="mel-offre-recherche">
+        <div class="mel-offre-recherche-barr"> 
+         <div id="mel-offre-recherche-title"><h1>Affiner les résultats</h1></div>
+         <div class="mel-filtres">
+             <div class="mel-filtres-recherche">
+                 <div class="mel-filtres-sec1">
+                     <select name="cars" class="mel-filtres-select-secteur" >
+                     <option value="">Tous les secteure</option>
+                     <option value="Centre d'appel - Immobilier">Centre d'appel - Immobilier</option>
+                     <option value="Aéronautique"> Aéronautique</option>
+                     <option value="Agriculture">Agriculture</option>
+                     <option value="Transport / Messagerie / Logistique">Transport / Messagerie / Logistique</option>
+                     <option value="Informatique - Offshoring">Informatique - Offshoring</option>
+                     </select>
+                     <input class="mel-recherche-filtre" type="search" placeholder="Recherche une entreprise...">
+                 </div>
+                 <div class="mel-filtres-sec2">
+                     <select name="cars" class="mel-filtres-select-ville" >
+                     <option value="">Tous les ville</option>
+                     <option value="Rabat">Rabat</option>
+                     <option value="Casablanca">Casablanca</option>
+                     <option value="Safi">Safi</option>
+                     <option value="agadir">agadir</option>
+                     <option value="sale">sale</option>
+                     </select>
+                 </div>
+                 <div class="mel-filtres-sec3">
+                 <input id= "mel-input-filtres" type="submit" value="Filtrer">
+                 </div>
+             </div>
+         </div>
+         <div>
+         </div>
+         </div>
+         <div class="mel-offre-recherche-result"> 
+             <div id="mel-filtres-result"><h1>Emploi - Maroc</h1></div>
+             <div class="mel-offre-recherche-result-affiche">
+                 <div class="mel-offre-result-affiche">
+                     <div class="mel-offre-result">
+                         <img src="images/mel-img-offre/logo.jpg" alt="">
+                         <div>
+                         <H1>Conseillers clients ( Immobilier ) H/F | safi (Maroc)</H1>
+                         <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
+                         </div>
+                     </div>
+                     <div class="mel-offre-result-line"></div>
+                     <div>
+                         <p class="details__">Publication : du 22/10/2024 au 16/12/2024 | Postes proposés: 3<br>
+                             Secteur d'activité : Centre d'appel - Immobilier / Promoteur / Agence<br>
+                             Fonction : Call Centers (métiers de) , Immobilier / Promotion (métiers de)<br>
+                             Expérience requise : De 1 à 3 ans<br>
+                             Niveau d'étude demandé : Bac +3<br>
+                             Type de contrat proposé : CDI - Télétravail : Non</p>
+                     </div>
+                     <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
+                 </div>
+                 <div class="mel-offre-result-affiche">
+                     <div class="mel-offre-result">
+                         <img src="images/mel-img-offre/logo (2).jpg" alt="">
+                         <div>
+                             <H1>Conseillers clients ( Immobilier ) H/F | Rabat (Maroc)</H1>
+                         <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
+                         </div>
+                     </div>
+                     <div class="mel-offre-result-line"></div>
+                     <div>
+                         <p class="details__"> Publication : du 22/10/2024 au 22/12/2024 | Postes proposés: 1 <br>
+                             Secteur d'activité : Aéronautique / SpatialFonction : Logistique / Transport (métiers de) <br>
+                             Expérience requise : De 3 à 5 ans <br>
+                             Niveau d'étude demandé : Bac +3 <br>
+                             Type de contrat proposé : CDI - Télétravail : Non</p>
+                     </div>
+                     <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
+                 </div>
+                 <div class="mel-offre-result-affiche">
+                     <div class="mel-offre-result">
+                         <img src="images/mel-img-offre/logo (3).jpg" alt="">
+                         <div>
+                         <H1>Conseillers clients ( Immobilier ) H/F | Rabat (Maroc)</H1>
+                         <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
+                         </div>
+                 </div> 
+                 <div class="mel-offre-result-line"></div>
+                     <div><p class="details__"> Publication : du 22/10/2024 au 22/12/2024 | Postes proposés: 1 <br> 
+                         Secteur d'activité : Agriculture / Environnement <br>
+                         Fonction : Agriculture (métiers de l') <br>
+                         Expérience requise : De 3 à 5 ans <br>
+                         Niveau d'étude demandé : Bac +5 et plus <br>
+                         Type de contrat proposé : CDI - Télétravail : Non</p></div>
+                         <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
+                 </div>
+                 <div class="mel-offre-result-affiche">
+                     <div class="mel-offre-result">
+                         <img src="images/mel-img-offre/logo (4).jpg" alt="">
+                         <div>
+                             <H1>Aide Comptable Fournisseurs | Casablanca (Maroc)</H1>
+                             <P>&nbsp;Y Stratégie est un cabinet de consulting né d’une passion pour l’élaboration et la coordination de plans d’action, les ressources humaines et le business development, est une structure dirigée conseils et...</P>
+                             </div>
+                     </div>
+                     <div class="mel-offre-result-line"></div>
+                     <div><p class="details__">Publication : du 22/10/2024 au 22/12/2024 <br> 
+                         Secteur d'activité : Transport / Messagerie / Logistique <br>
+                         Fonction : Gestion / Comptabilité / Finance <br>
+                         Expérience requise : De 1 à 3 ans Niveau d'étude demandé : Bac +2 <br>
+                         Type de contrat proposé : CDI - Télétravail : Non</p>
+                     </div>
+                     <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
+                 </div>
+                 <div class="mel-offre-result-affiche">
+                     <div class="mel-offre-result">
+                         <img src="images/mel-img-offre/logo (5).jpg" alt="">
+                         <div>
+                             <H1>Accounting Internship | Rabat (Maroc)</H1>
+                             <P>&nbsp;AXA Group Operations – Centre opérationnel d’excellence du Groupe AXA. Chez AXA, notre mission est de donner aux gens les moyens de vivre une vie meilleure. Grâce à l'innovation et à l'exécution, nous...</P>
+                             </div>
+                     </div>
+                     <div class="mel-offre-result-line"></div>
+                     <div><p class="details__">Publication : du 22/10/2024 au 23/11/2024 | Postes proposés: 1 <br>
+                         Secteur d'activité : Informatique - Offshoring / Nearshoring <br>
+                         Fonction : Gestion / Comptabilité / Finance <br>
+                         Expérience requise : De 1 à 3 ans <br>
+                         Niveau d'étude demandé : Bac +5 et plus <br>
+                         Type de contrat proposé : Stage - Télétravail : Hybride</p></div>
+                         <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
+                 </div>
+                 <div class="mel-offre-result-affiche">
+                     <div class="mel-offre-result">
+                         <img src="images/mel-img-offre/logo (2).jpg" alt="">
+                         <div>
+                             <H1>Conseillers clients ( Immobilier ) H/F | Rabat (Maroc)</H1>
+                             <P>&nbsp;Euro-Information, la Filiale Technologique du Crédit Mutuel depuis quatre  décennies, orchestre le Système d’Information (SI) pour 16 Groupes de Crédit Mutuel, Banques CIC, et diverses filiales couvrant...</P>
+                             </div>
+                     </div>
+                     <div class="mel-offre-result-line"></div>
+                     <div><p class="details__">Publication : du 22/10/2024 au 16/12/2024 | Postes proposés: 3<br>
+                         Secteur d'activité : Centre d'appel - Immobilier / Promoteur / Agence<br>
+                         Fonction : Call Centers (métiers de) , Immobilier / Promotion (métiers de)<br>
+                         Expérience requise : De 1 à 3 ans<br>
+                         Niveau d'étude demandé : Bac +3<br>
+                         Type de contrat proposé : CDI - Télétravail : Non</p></div>
+                         <div class="mel-input-filtres-cont"><input id= "mel-input-filtres" type="submit" value="Postuler"></div>
+                 </div>
+     
+             </div>
+         </div>
+     </div>
 <footer>
     <div class="footer-container">
         <div class="about-us">
@@ -246,9 +252,8 @@
 </div>
 
 </footer>
-
-
+<script src="js/offr.js"></script>
 </body>
 
 
-</html>²&
+</html>
