@@ -141,11 +141,7 @@ html {
   }
 
   .mz-navbar-logo-mobile {
-    display: block;
-    width: 60px;
-    height: 60px;
-    margin-top: 1em;
-    margin-right: 70%;
+   display:none;
   }
 
   .mz-navbar-open-sidebar-button {
