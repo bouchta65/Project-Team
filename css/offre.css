@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -12,9 +13,11 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    /* overflow: hidden; */
 }
 .mel-offre-recherche{
-    height: fit-content;
+    /* height: fit-content; */
+    padding: 50px 0px;
     
 }
 .mel-offre-recherche-barr{
@@ -119,18 +122,15 @@
     
     grid-template-columns: repeat(1, 1fr);
     
-    gap: 5%;
+    gap: 50px;
     justify-items: center;
 }
 
 .mel-offre-result-affiche {
     position: relative;
     padding: 3%;
-    padding-bottom: revert-layer;
-
     background-color: white;
-    box-shadow:  5px 5px 5px 5px #747474,
-     inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(46, 49, 240, 0.4) 5px 5px, rgba(46, 95, 240, 0.3) 10px 10px, rgba(49, 46, 240, 0.2) 15px 15px, rgba(46, 56, 240, 0.1) 20px 20px, rgba(62, 46, 240, 0.05) 25px 25px;
     border-radius: 10px;
     box-shadow: rgb(0, 0, 0);
     width: 86%;
@@ -412,6 +412,253 @@ nav a, .svg{
 
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  
+  background-color: #181C22;
+  color: white;
+  font-family: Arial, sans-serif;
+  height: 686px;
+  width: 100vw;
+  padding: 2em;
+ 
+  
+}
+
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.2em;
+  justify-content: center;
+  /* margin-left: 9em; */
+  flex-grow: 1;
+ 
+}
+
+.about-us{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.about-us{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.newsletter{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.footer-links{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4.1fr);
+  gap: 0.2em;
+  justify-content: center;
+  
+}
+.popular-links{
+  width: 10em;
+  
+}
+.popular-links ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6em;
+}
+.job-offers{
+  width: 15em;
+  margin-left: -95px;
+}
+.job-offers ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6em;
+  margin-right:2em ;
+}
+footer h3{
+  /* padding: 0.5em;
+  padding-left: 0em; */
+  color: white;
+  font-weight: bold;
+}
+footer a{
+  text-decoration: none;
+  color: #727272;
+}
+footer li{
+  list-style-type: none;
+  color: #727272;
+}
+.about-us p{
+  color: #727272;
+}
+.newsletter p{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  color: #727272;
+}
+footer form button,input{
+  border: none;
+}
+footer button{
+  height: 2em;
+  background-color: #4338CA;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+
+}
+footer button a{
+  font-size: 11px;
+  padding: 5px;
+  text-align: center;
+  color: aliceblue;
+}
+footer form input{
+  height: 2em;
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+footer form{
+  display: flex;
+}
+input::placeholder {
+  font-size: 10px;
+  padding: 11px;
+}
+
+
+.social-icons{
+  display: flex;
+  padding: 0.5em;
+  gap: 0.5em;
+}
+
+.footer-bottom p{
+  color: #727272;
+}
+.footer-bottom{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+@media (min-width: 1024px) {
+  footer{
+      background-color: #181C22;
+      color: white;
+      font-family: Arial, sans-serif;
+      width: 100%;
+      padding: 2em;
+      /* overflow: hidden; */
+  }
+  .footer-bottom{
+      display: flex;
+      justify-content: center;
+      
+  }
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr); /* Adjusted to fit four columns */
+    gap: 1em;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+  .about-us {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .popular-links{
+
+      grid-column-start: 2;
+      grid-column-end: 3;
+      margin-left: 5em;
+  }
+
+  /* .footer-links {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  } */
+   .job-offers{
+      grid-column-start:3 ;
+      grid-column-end: 4;
+   }
+
+
+  .newsletter {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    margin-left: -160px;
+    margin-right: 166px;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  footer {
+    height: auto; /* Adjust height to fit content naturally */
+    padding: 4em 6em; /* Adjust padding for desktop */
+  }
+
+  footer form input{
+      height: 2.5em;
+      border-top-left-radius: 0.5em;
+      border-bottom-left-radius: 0.5em;
+  }
+  footer button{
+      height: 2.5em;
+      border-top-right-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
+  
+  }
+  .mz-footer-regle{
+      display: flex;
+      justify-content: center;
+      margin-right: 200px;
+      flex-direction: column;
+      margin-top: 4em;
+      margin-bottom: -2em;
+  }
+
+}
+
+
+
+
 
 
 
